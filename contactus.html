@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+
+
+
+    <script>
+     function submitit() {
+      let fname=document.getElementById("nam").value;
+      
+      let email=document.getElementById("emal").value;
+      let phone=document.getElementById("phone").value;
+
+  if(fname==""){
+      alert("Plz Enter Name");
+  }
+  else if(email==""){
+      alert("Plz Enter E-Mail");
+  }else if(phone==""){
+      alert("Plz Enter Phone");
+  }
+  else{
+      alert(`your email is ${fname}\n your first name is ${email}\n your last name is ${phone} `);
+  }
+}
+    </script>
+    <style>
+      #nav {
+        background-color: skyblue;
+
+        text-align: right;
+        font-size: 35px;
+        margin-bottom: 2%;
+      }
+      header {
+        text-align: center;
+      }
+      h1 {
+        font-size: 50px;
+        color: saddlebrown;
+      }
+      #p {
+        font-size: 20px;
+      }
+      input[type="text"],
+      [type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid red;
+        border-radius: 4px;
+      }
+      #ta {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid red;
+        border-radius: 4px;
+      }
+      #foms {
+        margin: auto;
+        width: 30%;
+      }
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 25px;
+      }
+      button {
+        background-color:red; /* Green */
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        margin: 4px 2px;
+        width:100%
+      }
+    </style>
+    <title>Contact Us</title>
+  </head>
+  <body>
+   
+    
+    <section>
+      <header>
+        <h1>Contact Us</h1>
+        <p id="p">
+          You can Enter Your Details and Don't Forgot to submit Your Details,
+          <br />
+          So that we can easily reach to you
+        </p>
+      </header>
+      <div id="foms">
+        <form action="" method="GET">
+          <input type="text" name="" placeholder="Name" id="nam" /><br />
+          <input type="text" name="" placeholder="Email" id="emal" /><br />
+          <input type="number" name="" placeholder="Contact Number" id="phone"/><br />
+          <textarea
+            id="ta"
+            name="Query"
+            placeholder="Plzz Enter Your Query"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea
+          ><br />
+          <button type ="submit" onclick="submitit();">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>&copy; Tesla 2020 All Rights are Reserved</footer>
+  </body>
+</html>
